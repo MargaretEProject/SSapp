@@ -1,0 +1,428 @@
+body, html {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Basic', sans-serif;
+    font-family: 'Forum', cursive;
+    background-color: #879961;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("/sunflower.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+a {
+  color: white;
+  font-family: 'Basic', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+ /* adapted from https://codetheweb.blog/2017/12/07/fullscreen-image-hero/*/
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+        color: white; 
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("/milkyway.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+
+/*
+adapted from
+https://stanhub.com/scroll-to-top-then-fixed-navigation-effect-with-jquery-and-css-free-download/
+Version: 1.0.0 - 11.01.2014
+*/
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+
+body {
+	color: #fff;
+	font-family: 'Basic', sans-serif;
+    font-size: 18px;
+	text-align: center;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #879961;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+a:hover {
+	text-decoration: none;
+    color: #879961;
+}
+section {
+	height: 100vh;
+}
+
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}
+
+.container{
+    background: #fff;
+    opacity: 0.9;
+    text-align:center;
+    padding-top:150px;
+    padding-bottom:150px;
+    font-family: 'Basic', sans-serif;
+    font-family: 'Forum', cursive;
+    
+}
+
+/* comment form*/
+.addComment {
+  width: 400px;
+}
+input[type =text] {
+  width: 200px;
+  margin-left: 38px;
+}
+textarea {
+  width: 200px;
+  margin-left: 10px;
+}
+input[type =button],
+input[type =submit] {
+  clear: both;
+  margin-left: 85px;
+  display: block;
+}
+.label {
+  text-align: right !important;
+  display: block;
+  float: left;
+}
+#comments .name {
+  float: left;
+}
+#comments .created_at {
+  float: right;
+}
+#comments .content {
+  clear: both;
+}
+
+
+.row {
+    display: -webkit-flex;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.holder {
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    
+.large h1 {
+    margin-bottom: 2px;    
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.large h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.normal h1 {
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.normal h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.normal2 h1 {
+    margin-bottom: 2px;    
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.normal2 h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.normal {
+    width: 30%;
+     background-color: #879961;
+    background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+     padding:5px;
+     height: 300px;
+     margin-left:10px;
+     margin-bottom:10px;
+}
+
+.normal2 {
+    width: 30%;
+     background-color: #879961;
+      background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+     padding:5px;
+     height: 300px;
+     margin-left:10px;
+     margin-bottom:10px;
+}
+
+
+
+/* Style for catalogue page */
+
+
+.grid-container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+ /* background-color: #2196F3;  Comment this out later to remove the background color when not needed */
+  padding: 10px;
+}
+
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+ 
+}
+
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+
+.itemtitle {
+   display: block;
+    color: #879961;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px
+    
+}
+
+
+.itemp {
+   display: block;
+    color: #879961;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+
+
+.plantimage {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+.button {
+    background-color: #879961;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+#itemsContainer h2 {
+   display: block;
+    color: #879961;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+}
+
+
+#itemsContainer h1 {
+   display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+    
+}
+
+
+.itemhold {
+   margin: 10px;
+    
+    display: inline-block;
+    width: 100%;
+    
+    min-height: 30px;
+  
+   background-color: #ffffff;
+}
+
+
+
+
+/* End Style for catalogue page */
+
+
+/* Style for form */
+
+
+
+
+input[type=text], select {
+    width: 98%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Basic', sans-serif;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label {
+    background-color: #ffffff;
+    color:#879961;
+}
+
+.formHold {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-family: 'Basic', sans-serif;
+    font-size: 18px;
+	text-align: center;
+}
+
+/* End Style for form */
+
+

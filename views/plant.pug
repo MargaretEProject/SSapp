@@ -1,0 +1,21 @@
+extends layout
+block content
+
+    .row
+      .holder
+        h1 Plant
+          .grid-container
+            each row in res1
+             .item
+              h1.itemtitle #{row.Name}
+              img.pimage(src="/#{row.Image}", alt="/#{row.Image}")
+              p.itemp Price: &euro;#{row.Price}
+              p.itemp Details: #{row.Details}
+              p Contact Margaret to put you in touch with the vendor
+              a.button(href="/delete/#{row.Id}") Delete #{row.Name}
+              script.
+                $(document).ready(function(){
+                $("p").click(function(){
+                $(this).hide();
+                });
+                });

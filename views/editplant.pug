@@ -1,0 +1,27 @@
+extends layout
+block content
+    .row
+     br
+     br
+     h1 Edit this plant
+     br
+     .formHold
+       h1.itemtitle Edit product form
+       each row in res1
+        form(method="post")
+         fieldset
+          label(for="newname") Plant Name:
+          input(name="newname", type="text", value="#{row.Name}") 
+          label(for="newlatinname") Latin Name:
+          input(name="newlatinname", type="text", value="#{row.Name}") 
+          label(for="newcategory") Category:
+          input(name="newcategory", type="text", value="#{row.Price}") 
+          label(for="newimage") Plant Image:
+          input(name="newimage", type="text", value="#{row.Image}") 
+          label(for="newdetails") Plant Details:
+          input(name="newdetails", type="text", value="#{row.Details}") 
+          button.button(type="submit") Update the product
+     br
+     br
+     br
+    

@@ -1,0 +1,19 @@
+extends layout
+block content
+  br
+  br
+  .main.container
+    .row
+      .formHold
+        h1.itemtitle Register an account
+        form(method="post", action='/register/add')
+          fieldset
+            label(for="username") User Name:
+            input(name="username", type="text", placeholder="Please add a user name") 
+            label(for="email") Email Address:
+            input(name="email", type="text", placeholder="Please type in your email address")
+            label(for="password") Password:
+            input(name="password", type="text", placeholder="Please choose a password") 
+            label(for="location") Location:
+            input(name="location", type="text", placeholder="Please add the name of your nearest town") 
+            button.button(type="submit") Register

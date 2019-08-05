@@ -1,0 +1,30 @@
+extends layout
+block content
+    br
+    br
+    .row
+     br
+     br
+     br
+     br
+     .formHold
+       h1.itemtitle Please complete the following to add a plant to the catalogue:
+       form(method="post", action='/addplant')
+         fieldset
+           label(for="name") Plant Name:
+           input(name="name", type="text", placeholder="Please add a name") 
+           label(for="latinname") Latin Name:
+           input(name="latinname", type="text", placeholder="Please add the Latin name if known")
+           label(for="category") Category:
+           input(name="category", type="text", placeholder="Please type if offer or request") 
+           label(for="image") Plant Image:
+           input(name="image", type="text", placeholder="Please give a URL to an image of the plant if available") 
+           label(for="details") Plant Details:
+           input(name="details", type="text", placeholder="Please enter details of the plant") 
+           label(for="location") Location:
+           input(name="location", type="text", placeholder="Please enter the name of your closest town")
+           label(for="postedby") Posted By:
+           input(name="postedby", type="text", placeholder="Please add your username") 
+           button.button(type="submit") Add Plant
+     br
+     br

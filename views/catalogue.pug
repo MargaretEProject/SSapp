@@ -1,0 +1,18 @@
+extends layout
+block content
+  br
+  br
+  br
+  br
+  .main.container
+    h1  Plant Catalogue
+          br
+          br
+          .grid-container
+            .item
+              each plant in plants
+                h1= plant.plantname
+                p.itemp= plant.latinname
+                p.itemp Location= plant.location
+                p.itemp Details= plant.plantdetails
+                p.itemp User= user.username

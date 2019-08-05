@@ -1,0 +1,17 @@
+extends layout
+block content
+  br
+  br
+  .main.container
+    .row
+      .formHold
+        h1.itemtitle Contact Us
+        form(method="post", action='mailto:margaret.e.egan@gmail.com', enctype='text/plain')
+            label(for="username") User Name:
+            input(name="username", type="text", placeholder="Please add a user name") 
+            label(for="email") Email Address:
+            input(name="email", type="text", placeholder="Please type in your email address")
+            label(for="comment") Comment:
+            input(name="comment", type="text", size="100", placeholder="Please type in your comment")
+            button.button(type="submit", value="Send") Send
+
